@@ -47,6 +47,8 @@ end
 
 update do
   @frame += 1
+  
+  # Displays a new sprite every half a second
   @sprite.play(
     animation: ((@frame/30) % @iter),
     loop: true
